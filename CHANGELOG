@@ -1,3 +1,40 @@
+lxqt-openssh-askpass-2.1.0 / 2024-11-05
+========================================
+ * Updated translations and bumped the version.
+
+lxqt-openssh-askpass-2.0.1 / 2024-05-12
+========================================
+ * Fixed the Focus of the input entry with Qt6.
+
+lxqt-openssh-askpass-2.0.0 / 2024-04-17
+========================================
+ * Ported to Qt6.
+
+lxqt-openssh-askpass-1.4.0 / 2023-11-05
+========================================
+ * Updated translations and bumped the version.
+
+lxqt-openssh-askpass-1.3.0 / 2023-04-15
+========================================
+ * Bumped the version to 1.3.0.
+
+lxqt-openssh-askpass-1.2.0 / 2022-11-05
+========================================
+ * Bumped the version to 1.2.0.
+
+lxqt-openssh-askpass-1.1.0 / 2022-04-15
+========================================
+ * Updated translations.
+
+lxqt-openssh-askpass-1.0.0 / 2021-11-04
+========================================
+ * Updated AUTHORS.
+ * Bumped minimum required Qt version to 5.15.
+
+lxqt-openssh-askpass-0.17.0 / 2021-04-15
+========================================
+  * Updated README.md.
+
 lxqt-openssh-askpass-0.16.0 / 2020-11-01
 ========================================
   * Bumped version to 0.16.0.

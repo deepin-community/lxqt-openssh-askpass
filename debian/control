@@ -1,31 +1,25 @@
 Source: lxqt-openssh-askpass
-Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
-Uploaders: Alf Gaida <agaida@siduction.org>,
-           ChangZhuo Chen (陳昌倬) <czchen@debian.org>,
-           Andrew Lee (李健秋) <ajqlee@debian.org>,
-           Yukiharu YABUKI <yyabuki@debian.org>,
-           Yuan CHAO <yuanchao@gmail.com>
+Maintainer: LXQt Packaging Team <team+lxqt@tracker.debian.org>
+Uploaders: ChangZhuo Chen (陳昌倬) <czchen@debian.org>,
+           Andrew Lee (李健秋) <ajqlee@debian.org>
 Section: x11
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
-               libkf5windowsystem-dev,
-               liblxqt0-dev (>= 0.16.0~),
-               libqt5svg5-dev,
-               libqt5x11extras5-dev,
-               libx11-dev
-Standards-Version: 4.4.0
+Build-Depends: debhelper-compat (= 13),
+               libglib2.0-dev,
+               libkf6windowsystem-dev,
+               liblxqt-dev (>= 2.1.0~),
+               qt6-tools-dev
+Standards-Version: 4.7.0
 Vcs-Browser: https://salsa.debian.org/lxqt-team/lxqt-openssh-askpass
 Vcs-Git: https://salsa.debian.org/lxqt-team/lxqt-openssh-askpass.git
 Homepage: https://github.com/lxqt/lxqt-openssh-askpass
+Rules-Requires-Root: no
 
 Package: lxqt-openssh-askpass
 Architecture: any
 Provides: ssh-askpass
-Depends: ${misc:Depends},
-         ${shlibs:Depends},
-Recommends: lxqt-openssh-askpass-l10n,
-            lxqt-qtplugin,
-            lxqt-session
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: lxqt-openssh-askpass-l10n, lxqt-qtplugin (>= 2.1.0~), lxqt-session
 Suggests: lxqt | lxqt-core
 Description: OpenSSH user/password GUI dialog for LXQt
  This module handles openssh security password access for LXQt. The openssh
@@ -56,9 +50,8 @@ Package: lxqt-openssh-askpass-l10n
 Architecture: all
 Multi-Arch: foreign
 Section: localization
-Depends: ${misc:Depends},
-         qttranslations5-l10n
-Breaks: lxqt-openssh-askpass (<< 0.11.0)
-Replaces: lxqt-openssh-askpass (<< 0.11.0)
+Depends: qt6-translations-l10n, ${misc:Depends}
 Description: Language package for lxqt-openssh-askpass
- This package contains the l10n files needed by the lxqt-openssh-askpass.
+ The l10n files for lxqt-openssh-askpass.
+ .
+ This package contains the l10n files needed by lxqt-openssh-askpass.
